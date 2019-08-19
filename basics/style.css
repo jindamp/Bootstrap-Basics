@@ -1,0 +1,15 @@
+.one {
+    background: blue;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+div.one {
+    background: indigo;
+}
+
+.bg-primary{
+   background: #3498db !important;
+   color: white;
+}
