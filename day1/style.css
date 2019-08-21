@@ -1,0 +1,67 @@
+.bg-primary{
+    background: #3498db !important;
+    color: white;
+ }
+
+
+/*======= Navbar ============*/
+ .navbar>.navbar-brand {
+     color: white!important;
+ }
+ .navbar .nav-item {
+     padding-left:15px;
+     padding-right:15px;
+ }
+ .navbar .nav-link{
+    color: white !important;
+ }
+ .navbar .nav-item.active{
+    background: white;
+ }
+ .navbar .nav-item.active .nav-link{
+    color:#3498db !important;
+ }
+
+ .navbar .nav-item:hover {
+    background-color: white;
+    opacity: 0.8;
+}
+.navbar .nav-item:hover .nav-link {
+    color: #3498db !important;
+}
+
+/*======= End Navbar ============*/
+
+#basic_info .header-container{
+    margin-top: 20%;
+    float: right;
+}
+
+#basic_info .title {
+    font-size: 50px;
+    color: #77838e;
+}
+
+#basic_info .sub-title {
+    font-size: 35px;
+    color: #77838e;
+}
+
+
+.section-header {
+    font-size: 35px;
+    letter-spacing: 0.2rem;
+}
+
+.skills-item {
+    padding: 40px 100px;
+    background-color: white;
+    color: #77838e;
+    margin: 10px;    
+}
+
+.skills-item .text{
+    color: #77838e;
+    font-weight: bold;
+    font-size: 35px;
+}

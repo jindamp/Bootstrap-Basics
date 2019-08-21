@@ -1,58 +1,73 @@
-.bg-primary{
-    background: #3498db !important;
+.wrapper {
+    margin: -8px;
+}
+
+.wrapper.active .topnav{
+    left: 0;
+}
+
+.wrapper.active .sidebar{
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+
+.wrapper.active .content{
+    margin-left: 0;
+}
+
+
+.topnav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    -webkit-transition: left .2s;
+    transition: left .2s;
+    left: 12.5rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.19);
+}
+
+.sidebar {
+    background-color: #e74c3c;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -12.5rem;
+    width: 12.5rem;
+    overflow: auto;
+
+    z-index: 2;
+
+
+    -webkit-transform: translate(12.5rem);
+    transform: translate(12.5rem);
+
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s;
+}
+
+.sidebar .header{
+    padding: 15.5px 0px;
+    background: #c0392b;
     color: white;
- }
-
-
-/*======= Navbar ============*/
- .navbar>.navbar-brand {
-     color: white!important;
- }
- .navbar .nav-item {
-     padding-left:15px;
-     padding-right:15px;
- }
- .navbar .nav-link{
-    color: white !important;
- }
- .navbar .nav-item.active{
-    background: white;
- }
- .navbar .nav-item.active .nav-link{
-    color:#3498db !important;
- }
-/*======= End Navbar ============*/
-
-#basic_info .header-container{
-    margin-top: 20%;
-    float: right;
+    border-bottom: 1px solid #a53226!important;
 }
 
-#basic_info .title {
-    font-size: 50px;
-    color: #77838e;
-}
+.content {
+    margin-left: 12.5rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 
-#basic_info .sub-title {
-    font-size: 35px;
-    color: #77838e;
-}
+    min-height: 100%;
+    overflow-x: hidden;
+    margin-bottom: -10rem;
+    padding-bottom: 10rem;
+    
 
+    -webkit-transition: margin-left .2s;
+    transition: margin-left .2s;
 
-.section-header {
-    font-size: 35px;
-    letter-spacing: 0.2rem;
-}
-
-.skills-item {
-    padding: 40px 100px;
-    background-color: white;
-    color: #77838e;
-    margin: 10px;    
-}
-
-.skills-item .text{
-    color: #77838e;
-    font-weight: bold;
-    font-size: 35px;
+    margin-top: 62px;
 }
